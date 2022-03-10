@@ -9,6 +9,9 @@ header {
     border: 3px darkred solid;
     width: 100%;
     height: 500px;
+    background-image: url("../img/pink-hair.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 section {
@@ -17,11 +20,12 @@ section {
     /*Make articles flexible for different sizes*/
     width: 100%;
     height: auto;
+    padding: 10vh;
     display:grid;
     /*grid-template-columns: 150px 150px 150px ;*/
     grid-gap: 15px;
     display: grid;
-    grid-template-columns: repeat(3,250px);
+    grid-template-columns: repeat(4,250px);
 }
 
 article {
@@ -31,6 +35,41 @@ article {
     border-radius: 25px;
 }
 
+#article-one {
+    background-image: url("../img/ukraine-kids.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#article-two {
+    background-image: url("../img/breakfast.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#article-three {
+    background-image: url("../img/mardi-gras.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#article-four {
+    background-image: url("../img/thailand.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#article-five {
+    background-image: url("../img/coder.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#article-six {
+    background-image: url("../img/vanlife.jpg");
+    background-size: cover;
+    background-position: center;
+}
 footer {
     border: 3px darkgoldenrod solid ;
     height: 25px;
