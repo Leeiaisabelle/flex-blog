@@ -1,94 +1,219 @@
-nav {
-    border: 3px blue solid ;
-    height: 25px;
-    width: 100%;
+body {
+    /*background: #EF798A;*/
+    background: #B298DC;
+}
 
+nav, section, footer {
+
+    width: 100%;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    position: fixed;
+    /*background: #322B7D;*/
+    background: #3B3769;
+    z-index: 10000;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    display: block;
+}
+
+nav .nav-title {
+    /*font-family: Futura, Trebuchet MS, Arial, sans-serif;*/
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #70E4EF;
+}
+nav li a {
+    display: block;
+    text-decoration: none;
+
+
+    font-size: 1.1em;
+    /*color: #FFE4FA;*/
+    color: #70E4EF;
+    text-align: center;
+    transition: background .25s, box-shadow .15s;
+    padding: 20px;
+}
+
+nav li a:hover {
+    color: #3B3769;
+    background: #70E4EF;
+    transition: .5s ease;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /*box-shadow: 0px 4px 0px 0px #BB8EAC;*/
 }
 
 header {
-    border: 3px darkred solid;
     width: 100%;
-    height: 500px;
+    height: 100vh;
+    margin: -10px;
     background-image: url("../img/pink-hair.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+
 }
 
-section {
+.article-content {
     border: 3px midnightblue solid;
-    /*Fix width to contain articles*/
-    /*Make articles flexible for different sizes*/
+    /*!*Fix width to contain articles*!*/
+    /*!*Make articles flexible for different sizes*!*/
     width: 100%;
-    height: auto;
-    padding: 10vh;
+    height: 3000px;
+    /*padding: 10vh;*/
     display:grid;
-    /*grid-template-columns: 150px 150px 150px ;*/
-    grid-gap: 15px;
-    display: grid;
-    grid-template-columns: repeat(4,250px);
-}
+    /*!*grid-template-columns: 150px 150px 150px ;*!*/
+    /*grid-gap: 15px;*/
+    /*grid-template-columns: repeat(4,250px);*/
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+    grid-column-gap: 6px;
+    grid-row-gap:6px;
+    margin-bottom: 35px;
+    }
 
 article {
-    width: 250px;
-    height: 350px;
-    border: 1px darkred solid;
-    border-radius: 25px;
+    /*width: 250px;*/
+    /*height: 350px;*/
+    /*border: 1px darkred solid;*/
+    /*border-radius: 25px;*/
+    background-size: cover;
+    background-position: center;
+    /*z-index: -10;*/
+    /*opacity: 1;*/
+
 }
 
-#article-one {
+article:hover {
+    /*opacity: 0.3;*/
+    transition: .5s ease;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px inset;
+}
+
+#article-1 {
     background-image: url("../img/ukraine-kids.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
-#article-two {
+#article-2 {
     background-image: url("../img/breakfast.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
-#article-three {
+#article-3 {
     background-image: url("../img/mardi-gras.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
-#article-four {
+#article-4 {
     background-image: url("../img/thailand.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
-#article-five {
+#article-5 {
     background-image: url("../img/coder.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
-#article-six {
+#article-6 {
     background-image: url("../img/vanlife.jpg");
-    background-size: cover;
-    background-position: center;
 }
+
+#article-7 {
+    background-image: url("../img/seattle.jpg");
+}
+
+#article-8 {
+    background-image: url("../img/gardening.jpg");
+}
+
+#article-9 {
+    background-image: url("../img/shoes.jpg");
+}
+
+#article-10 {
+    background-image: url("../img/barbell.jpg");
+}
+
+#article-11 {
+    background-image: url("../img/python.jpg");
+}
+
+#article-12 {
+    background-image: url("../img/rocks.jpg");
+}
+
+#article-13 {
+    background-image: url("../img/mobo.jpg");
+}
+
+#article-14 {
+    background-image: url("../img/mushrooms.jpg");
+}
+
+#article-15 {
+    background-image: url("../img/books.jpg");
+}
+
+#article-16 {
+    background-image: url("../img/oil.jpg");
+}
+
+#article-17 {
+    background-image: url("../img/native-woman.jpg");
+}
+
+#article-18 {
+    background-image: url("../img/tub.jpg");
+}
+
+#article-19 {
+    background-image: url("../img/desk.jpg");
+}
+
+#article-20 {
+    background-image: url("../img/tent.jpg");
+}
+
 footer {
-    border: 3px darkgoldenrod solid ;
-    height: 25px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*border: 3px darkgoldenrod solid ;*/
+    /*height: 40px;*/
+    /*width: 100%;*/
+    /*background-color: #E50914;*/
+    /*float: bottom;*/
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    background: #3B3769;
 }
 
-.social-media {
-    border: 3px blue solid ;
-    height: 25px;
-}
-
-ul {
+.foot-note {
     display: flex;
-    list-style-type: none;
-    align-items: center;
     justify-content: center;
-    font-size: 2em;
+    height: fit-content;
 }
 
-li {
-    padding: 7px;
+.fa-heart {
+    padding: 0px 4px;
+
+    color: #730F17;
+}
+
+.fa-heart:hover{
+    color: #A41623;
+    transition: .5s ease;
 }

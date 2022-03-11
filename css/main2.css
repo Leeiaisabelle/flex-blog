@@ -1,0 +1,215 @@
+body {
+    margin: -8px;
+}
+
+/*header {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    background: #4A4860;*/
+/*    z-index: 10000;*/
+/*    border-bottom: 4px solid #323042;*/
+/*}*/
+
+nav {
+    /*border: 3px blue solid ;*/
+    top: 0;
+    left: 0;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    /*background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));*/
+    background: #4A4860;
+    border-bottom: 4px solid #323042;
+    z-index: 1000;
+}
+
+.nav-title {
+    /*display: inline-flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    font-size: 30px;
+    color: #000;
+    /*margin-left: 50px;*/
+    /*margin-right: 50px;*/
+    /*float: left;*/
+    border: 3px blue solid ;
+    font-family: 'BhuTuka Expanded One', cursive;
+}
+
+.social-media {
+    /*display: grid;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    border: 3px blue solid ;
+    height: 25px;
+    width: fit-content;
+}
+
+nav ul {
+    /*display: inline-block;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*list-style-type: none;*/
+    /*font-size: 2em;*/
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*nav ul li {*/
+/*    display: none;*/
+/*}*/
+
+nav a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    font-size: 2em;
+    color: #FFE4FA;
+    text-align: center;
+    padding: 7px 30px;
+    transition: background .25s, box-shadow .15s;
+}
+
+nav a:hover {
+    color: #4A4860;
+    background: #FFC4EB;
+    box-shadow: 0px 4px 0px 0px #BB8EAC;
+}
+
+/*li:hover {*/
+/*    opacity: 1;*/
+/*    transition: .5s ease;*/
+/*}*/
+
+header {
+    border: 3px darkred solid;
+    width: 100%;
+    height: 100vh;
+    margin: -8px;
+    background-image: url("../img/pink-hair.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+/*#header-content {*/
+/*    border: 3px yellow solid;*/
+/*}*/
+
+section {
+    border: 3px midnightblue solid;
+    /*Fix width to contain articles*/
+    /*Make articles flexible for different sizes*/
+    width: 100%;
+    height: auto;
+    padding: 10vh;
+    display:grid;
+    /*grid-template-columns: 150px 150px 150px ;*/
+    grid-gap: 15px;
+    grid-template-columns: repeat(4,250px);
+}
+
+article {
+    width: 250px;
+    height: 350px;
+    border: 1px darkred solid;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+    opacity: 1;
+}
+
+article:hover {
+    opacity: 0.4;
+    transition: .5s ease;
+}
+
+.overlay {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 20;
+    background-color: #008CBA;
+}
+
+#article-one {
+    background-image: url("../img/ukraine-kids.jpg");
+}
+
+#article-two {
+    background-image: url("../img/breakfast.jpg");
+}
+
+#article-three {
+    background-image: url("../img/mardi-gras.jpg");
+}
+
+#article-four {
+    background-image: url("../img/thailand.jpg");
+}
+
+#article-five {
+    background-image: url("../img/coder.jpg");
+}
+
+#article-six {
+    background-image: url("../img/vanlife.jpg");
+}
+
+#article-seven {
+    background-image: url("../img/seattle.jpg");
+}
+
+#article-eight {
+    background-image: url("../img/gardening.jpg");
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px darkgoldenrod solid ;
+    height: 40px;
+    width: 100%;
+    background-color: #E50914;
+}
+
+.foot-note {
+    border: 3px darkgoldenrod solid ;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+@media(min-width: 545px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav a {
+        padding: 20px;
+    }
+}
+
+
+
+
