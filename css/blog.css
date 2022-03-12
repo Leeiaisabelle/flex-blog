@@ -1,0 +1,13 @@
+body {
+    background: #B298DC;
+    margin: 0;
+}
+
+.jumbotron {
+    height: 70vh;
+    background-image: url("../img/rocks.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    max-width: 100%;
+}
