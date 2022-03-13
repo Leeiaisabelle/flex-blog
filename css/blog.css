@@ -7,7 +7,100 @@ body {
     height: 70vh;
     background-image: url("../img/rocks.jpg");
     background-size: cover;
+    /* Change background-postion depending on photo dimensions */
     background-position: bottom;
     background-attachment: fixed;
     max-width: 100%;
+}
+
+.article {
+    flex-direction: column;
+}
+
+.article-title {
+    border: blue 3px solid;
+    text-align: center;
+}
+
+.date {
+    text-align: center;
+    border: blue 3px solid;
+}
+
+.article-body {
+    border: #730F17 3px solid;
+    /*padding: 5%;*/
+    /*align-self: start;*/
+}
+
+.article-body p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+}
+
+.article-sidebar {
+    height: 250px;
+    border: deeppink 3px solid;
+    /*align-self: end;*/
+    padding: 7%;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+    grid-column-gap: 6px;
+    grid-row-gap:6px;
+}
+
+.article-sidebar a {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s;
+    font-family: 'Varela Round', sans-serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+}
+
+.article-sidebar a:hover {
+    transition: .5s ease;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transform: scale(1.25);
+    color: rgba(112, 228, 239, 1);
+    text-overflow: clip;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .article-body {
+        padding: 5%;
+    }
+    .article-sidebar {
+        grid-template-rows: repeat(auto-fill, minmax(250px, 2fr));
+        grid-column-gap: 6px;
+        grid-row-gap:6px;
+    }
+}
+
+@media (min-width: 800px) {
+    .article-body {
+        padding: 15% 25%;
+    }
+}
+
+@media screen and (max-device-width: 799px) {
+    .article-body {
+        padding: 5%;
+    }
+
+    .article-sidebar {
+        height: 2000px;
+    }
+
+    .article-sidebar {
+        grid-template-rows: repeat(auto-fill, minmax(250px, 2fr));
+        grid-column-gap: 6px;
+        grid-row-gap:6px;
+    }
 }
