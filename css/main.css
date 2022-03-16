@@ -1,64 +1,6 @@
-html {
-    scroll-behavior: smooth;
-}
 
-body {
-    background: #B298DC;
-    margin: 0;
-}
 
-nav, footer, header {
-    width: 100%;
-}
-
-nav {
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: #3B3769;
-    z-index: 10000;
-}
-
-nav .nav-title {
-    font-family: 'Amatic SC', cursive;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: #70E4EF;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-right: 30px;
-}
-
-nav li {
-    display: block;
-}
-
-nav li a {
-    display: block;
-    text-decoration: none;
-    font-size: 1.1em;
-    /*color: #FFE4FA;*/
-    color: #70E4EF;
-    text-align: center;
-    transition: background .25s, box-shadow .15s;
-    padding: 20px;
-}
-
-nav li a:hover {
-    color: #3B3769;
-    background: #70E4EF;
-    transition: .5s ease;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    /*box-shadow: 0px 4px 0px 0px #BB8EAC;*/
-}
-
-header {
+.header {
     height: 100vh;
     background-image: url("../img/pink-hair.jpg");
     background-size: cover;
@@ -98,6 +40,7 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
     grid-column-gap: 6px;
     grid-row-gap:6px;
+    background: #B298DC;
 }
 
 #article-tiles a {
@@ -113,7 +56,7 @@ header {
     font-size: 20px;
 }
 
-#article-tiles a:hover {
+#article-tiles a:hover, .article-tiles a:hover {
     transition: .5s ease;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     transform: scale(1.25);
@@ -122,7 +65,7 @@ header {
     justify-content: center;
 }
 
-#article-tiles a:hover:after {
+#article-tiles a:hover:after, .article-tiles a:hover:after  {
     content: ' ';
     position: absolute;
     left: 0;
@@ -213,7 +156,7 @@ header {
     background-image: url("../img/tent.jpg");
 }
 
-footer {
+.footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -237,17 +180,9 @@ footer {
     transition: .5s ease;
 }
 
-@media screen and (max-device-width: 750px) {
-    nav li a, nav li .nav-title,  .foot-note {
+@media screen and (max-device-width: 799px) {
+    .social-link, .nav-title, .foot-note {
         font-size: 4em;
-    }
-
-    #header-content h2 {
-        font-size: 3em;
-    }
-
-    .fa-chevron-down {
-        font-size: 3em;
     }
 
     .article-tiles {
@@ -255,9 +190,12 @@ footer {
     }
 
     #article-tiles {
-            grid-template-rows: repeat(auto-fill, minmax(250px, 2fr));
-            grid-column-gap: 6px;
-            grid-row-gap:6px;
-            height: 2750px;
+        display: flex;
+        flex-direction: column;
+        height: 10000px;
+    }
+
+    #article-tiles a {
+        height: 450px;
     }
 }

@@ -1,8 +1,3 @@
-body {
-    background: #B298DC;
-    margin: 0;
-}
-
 .jumbotron {
     height: 70vh;
     background-image: url("../img/rocks.jpg");
@@ -18,19 +13,11 @@ body {
 }
 
 .article-title {
-    border: blue 3px solid;
     text-align: center;
 }
 
 .date {
     text-align: center;
-    border: blue 3px solid;
-}
-
-.article-body {
-    border: #730F17 3px solid;
-    /*padding: 5%;*/
-    /*align-self: start;*/
 }
 
 .article-body p {
@@ -39,18 +26,17 @@ body {
     line-height: 1.6;
 }
 
-.article-sidebar {
+.article-tiles {
     height: 250px;
-    border: deeppink 3px solid;
-    /*align-self: end;*/
     padding: 7%;
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
     grid-column-gap: 6px;
     grid-row-gap:6px;
+    background: #B298DC;
 }
 
-.article-sidebar a {
+.article-tiles a {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -63,7 +49,7 @@ body {
     font-size: 20px;
 }
 
-.article-sidebar a:hover {
+.article-tiles a:hover {
     transition: .5s ease;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     transform: scale(1.25);
@@ -75,11 +61,6 @@ body {
 @media (max-width: 500px) {
     .article-body {
         padding: 5%;
-    }
-    .article-sidebar {
-        grid-template-rows: repeat(auto-fill, minmax(250px, 2fr));
-        grid-column-gap: 6px;
-        grid-row-gap:6px;
     }
 }
 
@@ -94,13 +75,12 @@ body {
         padding: 5%;
     }
 
-    .article-sidebar {
-        height: 2000px;
+    .article-tiles {
+        display: flex;
+        flex-direction: column;
+        height: 2500px;
     }
-
-    .article-sidebar {
-        grid-template-rows: repeat(auto-fill, minmax(250px, 2fr));
-        grid-column-gap: 6px;
-        grid-row-gap:6px;
+    .article-tiles a {
+        height: 350px;
     }
 }
