@@ -20,10 +20,21 @@
     text-align: center;
 }
 
+.article-body {
+    font-family: 'Lato', Arial, sans-serif;
+}
+
 .article-body p {
     text-align: justify;
     text-justify: inter-word;
-    line-height: 1.6;
+    line-height: 1.8;
+
+}
+
+.avatar {
+    margin-top: 75px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 .article-tiles {
@@ -73,6 +84,20 @@
 @media screen and (max-device-width: 799px) {
     .article-body {
         padding: 5%;
+    }
+
+    .avatar {
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .author {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .article-tiles {
+        height: fit-content;
     }
 
     .article-tiles {

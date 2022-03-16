@@ -1,159 +1,58 @@
-
-
-.header {
-    height: 100vh;
-    background-image: url("../img/pink-hair.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    max-width: 100%;
+html {
+    scroll-behavior: smooth;
 }
 
-#header-content {
-    text-align: center;
-    vertical-align: center;
-    padding-top: 65vh;
-    transition: transform .2s;
-    color: #70E4EF;
-    font-family: 'Amatic SC', cursive;
-    float: bottom;
+body {
+    /*Makes content fill the entire width of the page*/
+    margin: 0;
 }
 
-#header-content h2 {
-    font-size: 40px;
+.navbar, .footer, .header {
+    width: 100%;
 }
 
-.fa-chevron-down {
-    font-size: 40px;
-    color: #70E4EF;
-}
-
-.fa-chevron-down:hover {
-    transition: .5s ease;
-    transform: scale(1.25);
-}
-
-#article-tiles {
-    height: 1000px;
-    padding: 15%;
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
-    grid-column-gap: 6px;
-    grid-row-gap:6px;
-    background: #B298DC;
-}
-
-#article-tiles a {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    transition: transform .2s;
-    font-family: 'Varela Round', sans-serif;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0);
-    font-size: 20px;
-}
-
-#article-tiles a:hover, .article-tiles a:hover {
-    transition: .5s ease;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    transform: scale(1.25);
-    color: rgba(112, 228, 239, 1);
-    text-overflow: clip;
-    justify-content: center;
-}
-
-#article-tiles a:hover:after, .article-tiles a:hover:after  {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
+.navbar {
     top: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.7);
-    z-index: -1000000;
+    left: 0;
+    position: fixed;
+    background: #3B3769;
+    z-index: 10000;
 }
 
-.article-1 {
-    background-image: url("../img/ukraine-kids.jpg");
+.nav-title {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Amatic SC', Georgia, cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #70E4EF;
 }
 
-.article-2 {
-    background-image: url("../img/breakfast.jpg");
+.social-media {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+
 }
 
-.article-3 {
-    background-image: url("../img/mardi-gras.jpg");
+.social-link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #70E4EF;
+    text-align: center;
+    transition: background .25s, box-shadow .15s;
+    padding: 20px;
 }
 
-.article-4 {
-    background-image: url("../img/thailand.jpg");
-}
-
-.article-5 {
-    background-image: url("../img/coder.jpg");
-}
-
-.article-6 {
-    background-image: url("../img/vanlife.jpg");
-}
-
-.article-7 {
-    background-image: url("../img/seattle.jpg");
-}
-
-.article-8 {
-    background-image: url("../img/gardening.jpg");
-}
-
-.article-9 {
-    background-image: url("../img/shoes.jpg");
-}
-
-.article-10 {
-    background-image: url("../img/barbell.jpg");
-}
-
-.article-11 {
-    background-image: url("../img/python.jpg");
-}
-
-.article-12 {
-    background-image: url("../img/rocks.jpg");
-}
-
-.article-13 {
-    background-image: url("../img/mobo.jpg");
-}
-
-.article-14 {
-    background-image: url("../img/mushrooms.jpg");
-}
-
-.article-15 {
-    background-image: url("../img/books.jpg");
-}
-
-.article-16 {
-    background-image: url("../img/oil.jpg");
-}
-
-.article-17 {
-    background-image: url("../img/native-woman.jpg");
-}
-
-.article-18 {
-    background-image: url("../img/tub.jpg");
-}
-
-.article-19 {
-    background-image: url("../img/desk.jpg");
-}
-
-.article-20 {
-    background-image: url("../img/tent.jpg");
+.social-link:hover, .nav-title:hover {
+    color: #3B3769;
+    background: #70E4EF;
+    transition: .5s ease;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .footer {
@@ -183,19 +82,5 @@
 @media screen and (max-device-width: 799px) {
     .social-link, .nav-title, .foot-note {
         font-size: 4em;
-    }
-
-    .article-tiles {
-        height: fit-content;
-    }
-
-    #article-tiles {
-        display: flex;
-        flex-direction: column;
-        height: 10000px;
-    }
-
-    #article-tiles a {
-        height: 450px;
     }
 }
