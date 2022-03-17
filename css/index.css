@@ -10,16 +10,17 @@
 #header-content {
     text-align: center;
     vertical-align: center;
-    padding-top: 65vh;
+    padding-top: 60vh;
     transition: transform .2s;
     color: #70E4EF;
     font-family: 'Amatic SC', cursive;
     float: bottom;
-}
-
-#header-content h2 {
     font-size: 40px;
 }
+
+/*#header-content h2 {*/
+/*    font-size: 40px;*/
+/*}*/
 
 .fa-chevron-down {
     font-size: 40px;
@@ -160,7 +161,7 @@
     }
 
     #header-content {
-        font-size: 3em;
+        font-size: 65px;
     }
 
     #article-tiles {

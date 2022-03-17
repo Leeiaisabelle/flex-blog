@@ -21,7 +21,7 @@
 }
 
 .article-body {
-    font-family: 'Lato', Arial, sans-serif;
+    font-family: 'Lato', Arial sans-serif;
 }
 
 .article-body p {
@@ -35,6 +35,30 @@
     margin-top: 75px;
     height: 150px;
     border-radius: 50%;
+}
+
+.author {
+    padding-bottom: 75px;
+}
+
+.article-1 {
+    background-image: url("../img/ukraine-kids.jpg");
+}
+
+.article-2 {
+    background-image: url("../img/breakfast.jpg");
+}
+
+.article-3 {
+    background-image: url("../img/mardi-gras.jpg");
+}
+
+.article-4 {
+    background-image: url("../img/thailand.jpg");
+}
+
+.article-5 {
+    background-image: url("../img/coder.jpg");
 }
 
 .article-tiles {
@@ -69,6 +93,17 @@
     justify-content: center;
 }
 
+.article-tiles a:hover:after  {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: -1000000;
+}
+
 @media (max-width: 500px) {
     .article-body {
         padding: 5%;
@@ -95,7 +130,7 @@
         padding-top: 150px;
         padding-bottom: 150px;
     }
-
+    
     .article-tiles {
         height: fit-content;
     }
