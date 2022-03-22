@@ -32,12 +32,16 @@
 }
 
 .article-photo-section {
+    display: flex;
+    flex-direction: column;
     float: right;
     margin-left: 15px;
+    width: 300px;
 }
 
 .article-photo {
     width: 300px;
+
 }
 
 .avatar {
@@ -129,6 +133,12 @@
     .article-body {
         padding: 5%;
     }
+
+    .article-photo-section {
+        float: right;
+        margin-right: 0;
+    }
+
 
     .avatar {
         height: 300px;
