@@ -80,8 +80,8 @@ body {
     transition: .5s ease;
 }
 
-@media screen and (max-device-width: 799px) {
-    .social-link, .nav-title, .foot-note {
-        font-size: 4em;
-    }
-}
+/*@media screen and (max-device-width: 799px) {*/
+/*    .social-link, .nav-title, .foot-note {*/
+/*        font-size: 4em;*/
+/*    }*/
+/*}*/
