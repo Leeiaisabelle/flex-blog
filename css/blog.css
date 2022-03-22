@@ -31,6 +31,15 @@
 
 }
 
+.article-photo-section {
+    float: right;
+    margin-left: 15px;
+}
+
+.article-photo {
+    width: 300px;
+}
+
 .avatar {
     margin-top: 75px;
     height: 150px;
