@@ -101,6 +101,14 @@
     .article-body {
         padding: 5%;
     }
+
+    article-photo-section {
+        justify-content: center;
+    }
+
+    .author {
+        justify-items: center;
+    }
 }
 
 @media (min-width: 800px) {

@@ -89,3 +89,22 @@ body {
 /*        font-size: 4em;*/
 /*    }*/
 /*}*/
+
+@media screen and (max-device-width: 500px) {
+
+    .nav-title {
+        font-size: 18px;
+    }
+
+    .social-media {
+        padding: 10px;
+    }
+
+    .social-link {
+        padding: 9px;
+    }
+
+    .footer {
+        font-size: 5px;
+    }
+}
