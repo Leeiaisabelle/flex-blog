@@ -1,3 +1,7 @@
+@import 'index.css';
+@import 'blog.css';
+@import 'articles.css';
+
 html {
     scroll-behavior: smooth;
 }
